@@ -35,15 +35,15 @@ class SafeChainAgent < Formula
 
   service do
     name macos: "com.aikidosecurity.safechainagent"
-    run [opt_bin/"SafeChainAgent"]
+    run [opt_bin/"safechain-agent"]
     run_at_load true
     keep_alive true
-    log_path var/"log/SafeChainAgent.log"
-    error_log_path var/"log/SafeChainAgent.error.log"
+    log_path var/"log/safechain-agent.log"
+    error_log_path var/"log/safechain-agent.error.log"
   end
 
   test do
-    system "#{bin}/SafeChainAgent", "--version"
+    system "#{bin}/safechain-agent", "--version"
   end
 end
 
