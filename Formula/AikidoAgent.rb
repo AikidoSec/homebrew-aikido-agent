@@ -6,7 +6,7 @@ class AikidoAgent < Formula
   desc "Aikido Agent"
   homepage "https://github.com/AikidoSec/aikido-agent"
   version "0.1.0"
-  license "MIT"
+  license "AGPL"
 
   on_macos do
     if Hardware::CPU.intel?
